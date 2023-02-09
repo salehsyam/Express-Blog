@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR|Oswald|Playfair+Display|Yesteryear');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #2e2e2e;
+  background-color: #fff;
+}
+
+.date {
+  font-size: 1.5rem;
+  color: #624f9c;
+}
+
+/*Index*/
+
+nav .navbar-nav li a {
+  font-size: 1.3rem;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-family: 'Yesteryear', cursive;
+  font-size: 5rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  min-width: 80%;
+}
+
+.container img {
+  width: 100%;
+  box-shadow: 10px 10px 10px 7px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/banner1.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.hero-text h1 {
+  font-size: 5.2rem;
+}
+
+/*footer*/
+.col_white_amrc {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background-color: #263238;
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
+}
+
+.pt2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #ccc;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+.mb10 {
+  padding-bottom: 15px;
+}
+
+.footer_ul_amrc {
+  margin: 0px;
+  list-style-type: none;
+  font-size: 14px;
+  padding: 0px 0px 10px 0px;
+}
+
+.footer_ul_amrc li {
+  padding: 0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a {
+  color: #ccc;
+}
+
+.footer_ul_amrc li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fleft {
+  float: left;
+}
+
+.padding-right {
+  padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+  display: table;
+}
+
+.footer_ul2_amrc li a {
+  color: #b8bad6;
+}
+
+.footer_ul2_amrc li a:hover {
+  text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+  margin-top: 5px;
+}
+
+.bottom_border {
+  border-bottom: 1px solid #323f45;
+  padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+  list-style-type: none;
+  padding: 0px;
+  display: table;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+  display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+  color: #b8bad6;
+  margin: 0 12px;
+}
+
+.social_footer_ul {
+  display: table;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+}
+
+.social_footer_ul li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.social_footer_ul li a {
+  color: #b8bad6;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.social_footer_ul li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+/*Dashboard*/
+.dashboard-links {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.dashboard-links:hover {
+  text-decoration: none;
+  color: #624f9c;
+}
+/*Form*/
+label {
+  font-size: 1.5rem;
+}
+
+/*Posts*/
+.post-box div {
+  font-size: 2rem;
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+  padding: 40px;
+  text-align: justify;
+  /*box-shadow: 10px 10px 10px 7px rgba(0,0,0,.7);*/
+  position: relative;
+  top: -10px;
+}
+
+.title {
+  font-size: 5rem;
+  color: #624f9c;
+  margin-bottom: 3rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.title-link:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+/*Buttons*/
+.btn-custom {
+  min-width: 15%;
+  min-height: 10%;
+  font-size: 100%;
+  text-align: center;
+  padding: 1%;
+  margin: 0 auto;
+  background-color: #b8bad6;
+  border-color: transparent;
+}
+
+.btn-custom:hover {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+/*Comments session*/
+#respond {
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+
+  line-height: 1.4em;
+}
+
+#respond h4 {
+  font-family: 'Yesteryear', cursive;
+  font-size: 3rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#respond button {
+  font-size: 1.5rem;
+}
+#respond input[type='text'],
+#respond input[type='email'],
+#respond textarea {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+
+  line-height: 1.4em;
+}

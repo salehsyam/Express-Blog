@@ -1,0 +1,38 @@
+<%- include('layouts/header.html') %>
+
+<div class="video-banner">
+  <div class="video-text"></div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <h1>Sign In</h1>
+      <form action="/user/login" method="post">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-custom">Sign In</button>
+      </form>
+      <br />
+      <p>Don't have an account? <a href="/user/signup">Sign Up</a></p>
+    </div>
+  </div>
+</div>
+<%- include('layouts/footer.html') %>

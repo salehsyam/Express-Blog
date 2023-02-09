@@ -1,0 +1,73 @@
+<%- include('../layouts/header.html') %>
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <aside class="col-12 col-md-2 p-0 bg-dark">
+      <nav
+        class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start py-2"
+      >
+        <div class="collapse navbar-collapse">
+          <ul
+            class="flex-md-column flex-row navbar-nav w-100 justify-content-between"
+          >
+            <li class="nav-item">
+              <a class="nav-link pl-0 text-nowrap" href="/"
+                ><i class="fas fa-home"></i>
+                <span class="font-weight-bold">Horror Classics Blog</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="/dashboard"
+                ><i class="fa fa-book fa-fw"></i>
+                <span class="d-none d-md-inline">My Posts</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="/create"
+                ><i class="fas fa-pencil-alt fa-fw"></i>
+                <span class="d-none d-md-inline">New Post</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="/user/logout"
+                ><i class="fas fa-sign-out-alt" fa-fw></i>
+                <span class="d-none d-md-inline">Logout</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    <main class="col bg-faded py-3">
+      <span class="text-center">
+        <h1>My Posts</h1>
+      </span>
+      <div class="container">
+        <table class="table">
+          <thead class="" style="background-color: #b8bad6">
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% posts.forEach(function(post) { %>
+            <tr>
+              <td>
+                <a
+                  href="/single-post/<%= post.post_id%>"
+                  class="dashboard-links"
+                  ><%= post.title %></a
+                >
+              </td>
+              <td><%= post.user.name %></td>
+              <td><%= post.createdAt %></td>
+            </tr>
+            <% })%>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+<%- include('../layouts/footer.html') %>

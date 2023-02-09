@@ -1,0 +1,75 @@
+<%- include('../layouts/header.html') %>
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <aside class="col-12 col-md-2 p-0 bg-dark">
+      <nav
+        class="navbar navbar-expand navbar-dark flex-md-column flex-row align-items-start py-2"
+      >
+        <div class="collapse navbar-collapse">
+          <ul
+            class="flex-md-column flex-row navbar-nav w-100 justify-content-between"
+          >
+            <li class="nav-item">
+              <a class="nav-link pl-0 text-nowrap" href="/"
+                ><i class="fas fa-home"></i>
+                <span class="font-weight-bold">Horror Classics Blog</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="/dashboard"
+                ><i class="fa fa-book fa-fw"></i>
+                <span class="d-none d-md-inline">My Posts</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="/create"
+                ><i class="fas fa-pencil-alt fa-fw"></i>
+                <span class="d-none d-md-inline">New Post</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="/user/logout"
+                ><i class="fas fa-sign-out-alt" fa-fw></i>
+                <span class="d-none d-md-inline">Logout</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    <main class="col bg-faded py-3">
+      <div class="container">
+        <form action="/edit/<%= post.post_id%>" method="post">
+          <span class="text-center">
+            <h1>Edit Post</h1>
+          </span>
+          <div class="form-group">
+            <label for="name">Title</label>
+            <input
+              class="form-control"
+              name="updateTitle"
+              type="text"
+              value="<%= post.title %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Post</label>
+            <textarea
+              class="form-control"
+              name="updatePost"
+              id="exampleFormControlTextarea1"
+              rows="15"
+              required
+            >
+<%= post.post %></textarea
+            >
+          </div>
+          <button type="submit" class="btn btn-custom mb-2">
+            <i class="far fa-save" style="font-size: 25px"></i> Save
+          </button>
+        </form>
+      </div>
+    </main>
+  </div>
+</div>
+<%- include('../layouts/footer.html') %>

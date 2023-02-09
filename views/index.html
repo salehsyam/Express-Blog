@@ -1,0 +1,34 @@
+<%- include('layouts/header.html') %>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Siam Blog</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam sit maxime ipsum, nam et qui fugit in quasi similique culpa unde temporibus aperiam harum eum dolor cumque at ducimus ut?
+    </p>
+  </div>
+</div>
+<%#
+<div style="width: 100%; height: 50%"></div>
+%>
+<div class="container">
+  <div class="row post-box">
+    <div class="col-md-10 col-md-offset-2">
+      <img src="/images/post_img.jpg" />
+      <a href="#>" style="text-decoration: none"
+        ><h1 class="title title-link">post.title</h1></a
+      >
+      <span style="text-align: right"><h3>Author: post.user.name></h3></span>
+      <br />
+      <p>post.post</p>
+      <br />
+      <a href="#" style="text-decoration: none; color: #624f9c"
+        >Read more <i class="fas fa-angle-double-right"></i
+      ></a>
+      <br />
+      <br />
+      <hr />
+    </div>
+  </div>
+</div>
+<%- include('layouts/footer.html') %>
